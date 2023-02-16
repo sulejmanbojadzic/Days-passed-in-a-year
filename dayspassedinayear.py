@@ -3,7 +3,7 @@ isleap=False
 year=int(date[-4:])
 month=int(date[3:5])
 day=int(date[0:2])
-dateordinalnumbercounter=0
+dayspassefinayear=0
 
 if year%100==0 and year%400==0: #We check if year is a leap year
     isleap=True
@@ -25,7 +25,7 @@ for i in range(1,month+1): #We loop trough the amount of months
     else:
         j=30
     for days in range(1,j+1): #And then trough amount of days in each month and last month
-        dateordinalnumbercounter+=1
-print(dateordinalnumbercounter)
+        dayspassefinayear+=1
+print(dayspassefinayear)
 
 
